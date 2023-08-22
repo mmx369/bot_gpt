@@ -5,9 +5,9 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "dev": "npx nodemon",
+    "dev": "cross-env NODE_ENV=development nodemon",
     "build": "rimraf ./build && npx tsc",
-    "start": "npm run build && node build/main",
+    "start": " npm run build && cross-env NODE_ENV=production node build/main",
     "lint": "npx eslint ./src",
     "format": "npx eslint ./src --fix"
   },

@@ -1,4 +1,7 @@
-config
+config/default.json
+config/production.json
 node_modules
 voices
 build
+.idea
+.vscode
